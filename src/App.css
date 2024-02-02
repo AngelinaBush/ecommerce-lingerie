@@ -989,6 +989,7 @@ nav {
 .size-range button {
     padding: 10px 22px;
     border-radius: 10px;
+    color:#000000;
     cursor:pointer;
     font-family: 'Montserrat', sans-serif;
 }
