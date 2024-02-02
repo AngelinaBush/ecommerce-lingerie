@@ -8,13 +8,13 @@ import Swal from 'sweetalert2';
 
 const Contact = () => {
 
-    const { i18n, t } = useTranslation();
+    const { t } = useTranslation();
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [error, setError] = useState('');
-    const [success, setSuccess] = useState('');
+    const [setSuccess] = useState('');
    
     
     const handleSubmit = (e) => {

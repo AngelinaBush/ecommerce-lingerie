@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 const Countdown = () => {
 
-    const { i18n, t } = useTranslation();
+    const { t } = useTranslation();
 
     const [days, setDays] = useState(0);
     const [hours, setHours] = useState(0);
