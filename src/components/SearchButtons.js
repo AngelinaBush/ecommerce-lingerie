@@ -12,8 +12,8 @@ const SearchButtons = ({data, setShop, filteredProducts}) => {
         <div className='categories'>
             <ul>
                 <li className='category all-cat' onClick={() => setShop(data)}>{t('All Categories')}</li>
-                <li className='category cat' onClick={() => filteredProducts("most wanted")}>Best sellers <span><CiStar /></span></li>
-                <li className='category cat' onClick={() => filteredProducts("matching set")}>{t('Matching sets')}</li>
+                <li className='category' onClick={() => filteredProducts("most wanted")}>Best sellers <span><CiStar /></span></li>
+                <li className='category' onClick={() => filteredProducts("matching set")}>{t('Matching sets')}</li>
                 <li className='category' onClick={() => filteredProducts("black and white")}>{t('Black and white sets')}</li>
                 <li className='category' onClick={() => filteredProducts("colorful")}>{t('Colorful sets')}</li>
                 <li className='category' onClick={() => filteredProducts("longline bra")}>{t('Sets with longline bra')}</li>

@@ -555,6 +555,7 @@ nav {
     margin-bottom: 3%;
     background-color: #ffffff6b;
     border: none;
+    color:#000000;
     box-shadow: 4px 2px 4px #00000028;
     cursor: pointer;
 }
@@ -758,6 +759,7 @@ nav {
 	outline: none;
 	border-bottom: .2em solid #E91E63;
     background: #f9d4e091;
+    color:#000000;
 }
 
 /*SHOP PAGE*/
@@ -778,7 +780,6 @@ nav {
 
 .left-box .banner img {
     width: 85%;
-    
 }
 
 .left-box .search-categories {
@@ -813,11 +814,6 @@ nav {
 .categories .all-cat {
    font-weight: bolder;
    font-size: 15px;
-}
-
-.categories .cat {
-    font-weight: 500;
-    font-size: 15px;
 }
 
 .valentines-cat {
@@ -881,6 +877,7 @@ nav {
     border: none;
     font-size:20px;
     cursor:pointer;
+    color:#000000;
 }
 
 
@@ -1118,7 +1115,7 @@ nav {
   }
 
 .full-cart .cart-item img {
-    width: 110%;
+    width: 190px;
     height: 100%;
 }
 
@@ -1147,6 +1144,7 @@ nav {
 
 .full-cart .cart-item .item-details .item-quantity button {
     padding: 10px 20px;
+    color:#000000;
     border: none;
     outline: none;
     background: #fe9bac;
@@ -1427,6 +1425,7 @@ textarea:focus {
     text-transform: uppercase;
     font-weight: 600;
     border: none;
+    color:#000000;
     padding: 5px;
 }
 
@@ -1443,6 +1442,7 @@ textarea:focus {
     border: none;
     padding: 10px 25px;
     cursor: pointer;
+    color:#000000;
 }
 
 .header .clear-favourites:hover {
@@ -2317,6 +2317,59 @@ textarea:focus {
         padding: 18px 30px;
         margin-top: 3px;
     }
+
+    .full-cart .cart-item .item-details .item-info h4 {
+        font-size: 17px;
+    }
+
+    .full-cart .cart-item .item-details .item-info p {
+        font-size: 15px;
+    }
+    
+    .full-cart .cart-item img {
+        width: 140px;
+        height: 100%;
+    }
+
+    .full-cart .cart-item {
+        height: 200px;
+    }
+
+    .full-cart .cart-item .item-details .item-quantity button {
+        padding: 5px 10px;
+        height: 30px;
+        font-size: 16px;
+    }
+    
+    .full-cart .cart-item .item-details .item-quantity input {
+        padding: 5px 10px;
+        width: 50px;
+    }
+    
+    .full-cart .cart-item .item-details .item-price p {
+        font-size: 17px;
+    }
+       
+    .full-cart .cart-item .item-details .remove-item button {
+        padding: 4px 9px;
+        font-size: 13px;
+    }
+
+    .clear-cart button {
+        margin-top: 6%;
+    }
+
+    .cart .total-price {
+        margin-top: 8%;
+    }
+     
+    .cart .total-price .total h4 {
+        font-size: 22px;
+    }
+
+    .checkout {
+        margin-top: 5%;
+     }
     
     
 }
