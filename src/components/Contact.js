@@ -14,7 +14,7 @@ const Contact = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [error, setError] = useState('');
-    const [setSuccess] = useState('');
+    const [success, setSuccess] = useState('');
    
     
     const handleSubmit = (e) => {

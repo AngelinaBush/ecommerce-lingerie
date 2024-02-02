@@ -80,6 +80,7 @@ nav {
 .up-nav-container .lang-container button {
     border: 1px solid rgba(0, 0, 0, 0.562);
     padding: 2px 5px;
+    color:#000000;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 12px;
@@ -150,6 +151,7 @@ nav {
     font-size: 20px;
     border:none;
     cursor: pointer;
+    color:black;
 }
 
 .nav-icon sup{
@@ -2049,7 +2051,8 @@ textarea:focus {
     
     .landing-content {
        max-width: 25rem;
-       margin-left: 4rem;
+       margin-left: 1rem;
+       margin-right: 1rem;
        z-index: 4;  
        padding: 6%;
        margin-top: 45%;
@@ -2081,7 +2084,7 @@ textarea:focus {
     }
 
     .popular .header h3 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .popular .header {
