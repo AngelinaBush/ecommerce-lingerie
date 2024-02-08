@@ -171,6 +171,7 @@ nav {
     position: relative;
     background-image: url(./components/Assets/flower5.png);
     height: 100vh;
+    max-width: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -203,7 +204,7 @@ nav {
     background-size: contain;
     background-position-x: right;
     height: 100%;
-    width: 95%;
+    width: 90%;
     right: 4rem;
 }
 
@@ -516,6 +517,10 @@ nav {
     background-color: #e47694;
 }
 
+.text-content button:hover {
+    color:white
+}
+
 /*HOME PAGE 6 - COUNTDOWN*/
 .discount-countdown {
     min-height: 100vh;
@@ -544,6 +549,7 @@ nav {
     font-size: 20px;
     margin-top: 2%;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 .discount-countdown .header button {
@@ -558,6 +564,11 @@ nav {
     color:#000000;
     box-shadow: 4px 2px 4px #00000028;
     cursor: pointer;
+}
+
+.discount-countdown .header button:hover {
+    background-color: #fac7d5;
+    font-weight: 500;
 }
 
 .countdown-container-general {
@@ -825,7 +836,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 73%;
+    max-width: 72%;
     margin-left: 2%;
     margin-top: 2%;
 }
@@ -836,7 +847,7 @@ nav {
 
 .right-box .banner img {
     width: 100%;
-    height: 35vh;       
+    max-height: 35vh;       
 }
 
 .right-box .products-container {
@@ -1467,31 +1478,32 @@ textarea:focus {
 
 @media screen and (max-width: 1450px) {
 
-    .home3 {
-        right: -1%;
+    .landing-content {
+        max-width: 35rem;
     }
 
+    .home3 {
+        right: 0;
+        bottom: 0;
+    }
 }
 
 
 @media screen and (max-width: 1280px) {
 
     .logo-container .logo-header {
-        font-size: 170px;
-    }
-           
-    .home3 {
-        right: 0;
+        font-size: 160px;
     }
 
-   .landing-content {
-       z-index: 2;
+    .home2 {
+        height: 80%;
+        width: 90%;
     }
 
     .landing-content {
-        max-width: 30rem;
+        max-width: 32rem;
         margin-left: 4rem;
-        padding: 6%;
+        padding: 4%;
     }
         
     .landing-content h3 {
@@ -1591,18 +1603,25 @@ textarea:focus {
 }
 
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1200px) {
     .logo-container .logo-header {
         font-size: 120px;
+    }
+
+    .landing-content {
+        max-width: 24rem;
+    }
+
+    .landing-content h3 {
+        font-size: 25px;
     }
 
 }
 
 @media screen and (max-width: 1025px) {
 
-   
     .logo-container .logo-header {
-        font-size: 130px;
+        font-size: 110px;
     }
 
     .home {  
@@ -1611,31 +1630,30 @@ textarea:focus {
     }
         
     .home2 {
-        height: 70%;
+        height: 75%;
         width: 90%;
-        z-index: 2;
     }               
         
     .home3 {
-        height: 90%;
-        width:90%;
         bottom:0;
-        right:1rem;
     }
         
     .landing-content {
-        max-width: 27rem;
-        margin-left: 2rem;
-        padding: 4%;
+        max-width: 23rem;
         margin-left: 4rem;
+        padding: 3%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
         
     .landing-content h3 {
-        font-size: 21px;
+        font-size: 24px;
+        margin-bottom: 3%;
     }
 
     .landing-content h2 {
-        font-size: 29px;
+        font-size: 32px;
+        margin-bottom: 3%;
     }
 
     .popular {
@@ -1677,7 +1695,6 @@ textarea:focus {
     .carousel-product p {
         font-size: 20px;
     }
-
     
     .why-us::before {  
        min-height: 60vh;
@@ -1745,10 +1762,6 @@ textarea:focus {
         height: 100%;
     }
 
-    .right-box .banner img {
-        width: 90%;
-        height: 100%;
-    }  
 
     .selected-item-window {
         margin-left: 4%;
@@ -1844,29 +1857,26 @@ textarea:focus {
     .home2 {
         height: 70%;
         width: 90%;
-        z-index: 2;
-    }               
-    
+    }    
+
     .home3 {
-        height: 80%;
-        width:90%;
+        height: 90%;
         bottom:0;
-    }
+    }             
 
     .landing-content {
-        max-width: 21rem;
-        margin-left: 5rem;
+        max-width: 19rem;
+        margin-left: 2rem;
         padding: 3%;
-        z-index: 2;
      }
      
      .landing-content h2 {
-         font-size: 25px;
+         font-size: 24px;
          margin-bottom: 1rem;
      }
 
      .landing-content h3 {
-        font-size: 21px;
+        font-size: 19px;
     }
 
     .popular .header {
@@ -1923,18 +1933,13 @@ textarea:focus {
     }
 
     .left-box {
-        width: 25%;
-    }
-
-    .right-box .banner img {
-        width: 90%;
-        height: 100%;
+        max-width: 30%;
     }
 
     .right-box {
         display: flex;
         flex-direction: column;
-        max-width: 75%;
+        max-width: 70%;
         margin-left: 2%;
         margin-top: 2%;
     }
@@ -2010,8 +2015,34 @@ textarea:focus {
     } 
 }
 
+@media screen and (max-width: 680px) {
 
-@media screen and (max-width: 450px) {
+    .logo-container .logo-header {
+        font-size: 65px;
+    }
+
+    .landing-content {
+        max-width: 16rem;
+        margin-left: 1rem;
+     }
+     
+     .landing-content h2 {
+         font-size: 23px;
+     }
+
+     .landing-content h3 {
+        font-size: 17px;
+    }
+
+    .home3 {
+        height: 95%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 600px) {
 
     .up-nav-container .ship-container h3{
         font-size: 10px;
@@ -2032,30 +2063,32 @@ textarea:focus {
 
     .home {
         background-image: url(./components/Assets/flower3.png);
-        height: 75vh;
+        height: 70vh;
         background-position: bottom 10% right 30%;
     }
     
     .home2 {   
-        height: 70%;
+        height: 80%;
         width: 90%;
         z-index: 2;
     }               
     
     .home3 {
-        background-image: url('./components/Assets/woman1.png');
-        height: 90%;
-        width:90%;
-        right: 8%;
-        top:0;
+        background-image: url(./components/Assets/woman1.png);
+        height: 100%;
+        width:100%;
+        bottom:0;
+        position: absolute;
     }
     
     .landing-content {
-       max-width: 25rem;
+       position: relative;
+       max-width: 28rem;
        margin-left: 1rem;
        margin-right: 1rem;
+       margin-bottom: 2rem;
        z-index: 4;  
-       padding: 6%;
+       padding: 4%;
        margin-top: 45%;
     }
     
@@ -2157,6 +2190,18 @@ textarea:focus {
         display: none;
     }
 
+    .video-content .video {
+        width: 100%;
+    }
+
+    .valentines-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 30px;
+    }
+    
+
     .hr-lines:after{
         width: 9vh;
         right: -10vh;
@@ -2192,11 +2237,6 @@ textarea:focus {
         width: 40%;
     }
 
-    .right-box .banner img {
-        width: 96%;
-        height: 100%;
-    }
-
     .right-box {
         display: flex;
         flex-direction: column;
@@ -2204,10 +2244,11 @@ textarea:focus {
         margin-left: 5%;
         margin-top: 2%;
     }
-    
+
     .right-box .banner {
-        margin-left: 5%;
+        margin-right: 2%;
     }
+    
 
     .categories ul .all-cat {
         font-size: 12px;
@@ -2253,65 +2294,6 @@ textarea:focus {
 
     .contact .contact-box {
         grid-template-columns:1fr;
-    }
-
-    .selected-item-window {
-        padding: 30px 5px;
-        margin-left: 1%;
-        margin-right: 1%;
-        margin-top: 3%;
-        background-size: cover;
-        background-position: center;
-    }
-    
-    .selected-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }   
-    
-    .continueBtn {
-        float: none;
-        margin-right: 0;
-        margin-bottom: 5%;
-        padding: 2px;
-    }
-    
-    .chosen-item-img {
-        width: 260px;
-        height: 360px;
-    }
-    
-    .selected-item-rightside {
-        align-items: center;
-        margin: 0px 0px;
-    }
-    
-    .selected-item-info h2 {
-        font-size: 30px;
-        text-align: center;
-    }
-    
-    .selected-item-info h3 {
-        font-size: 20px;
-        text-align: center;
-    }
-    
-    .select-size h3 {
-        margin-top: 10px;
-        font-size: 20px;
-    }
-    
-    .size-range {
-        margin: 15px 0px;
-        gap:20px;
-    }
-    
-    .size-range button {
-        padding: 10px 22px;
-        border-radius: 10px;
-        cursor:pointer;
-        font-family: 'Bodoni Moda', serif;
     }
     
     .addToCart-btn {
@@ -2371,9 +2353,29 @@ textarea:focus {
     .checkout {
         margin-top: 5%;
      }
-    
-    
+     
 }
+
+
+@media screen and (max-width: 360px) {
+    .logo-container .logo-header {
+        font-size: 32px;
+    }
+
+    .landing-content {
+        padding: 3%;
+     }
+     
+     .landing-content h2 {
+         font-size: 18px;
+     }
+     
+     .landing-content h3{
+         font-size: 15px;
+     }
+}
+
+
 
 
 

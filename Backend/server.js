@@ -28,7 +28,7 @@ app.post("/", (req, res) => {
     })
     
     newMessage.save()
-    res.sendFile(__dirname + '/Answer.html')
+    res.sendFile('Form submitted successfully!')
 
 
 })
