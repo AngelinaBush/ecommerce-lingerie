@@ -29,7 +29,7 @@ const Contact = () => {
  
         
         const data  = {name, email, message}
-        fetch("http://localhost:4000", {
+        fetch("https://backend-lingerie.netlify.app/", {
             method:"POST",
             body: JSON.stringify(data),
             headers:{

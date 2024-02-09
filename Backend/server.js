@@ -19,7 +19,7 @@ const messageSchema = {
 
 const Message = mongoose.model('MyMessages', messageSchema);
 
-app.post("/", (req, res) => {
+app.post("/", async (req, res) => {
 
     let newMessage = new Message({
         name: req.body.name,
@@ -27,10 +27,8 @@ app.post("/", (req, res) => {
         message: req.body.message,
     })
     
-    newMessage.save()
-    res.sendFile('Form submitted successfully!')
-
-
+    await newMessage.save()
+    res.sendStatus(200)
 })
 
 app.listen(4000, () => {
