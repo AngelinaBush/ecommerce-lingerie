@@ -1,0 +1,73 @@
+.valentines {
+    width: 100%;
+    height: 100vh;
+    background-color: #fa9fae6f;
+}
+
+.valentines-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 60px;
+}
+
+.video-content {
+    position: relative;
+}
+
+.video-content .video {
+    width: 96%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+.text-content {
+    text-align: center;
+    background-color: #ffffffb7;
+    padding: 40px 80px;
+    position: absolute;
+}
+
+.text-content h3 {
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+.text-content p {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-content button{
+    margin-top: 2%;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 7px 15px;
+    font-weight: 500;
+    color: #000000;
+    text-shadow: 0px 0px 1px #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #e47694;
+}
+
+.text-content button:hover {
+    color:white
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .video-content .video {
+        width: 100%;
+    }
+
+    .valentines-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 30px;
+    }   
+
+}

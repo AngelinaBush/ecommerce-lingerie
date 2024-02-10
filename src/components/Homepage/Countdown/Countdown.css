@@ -1,0 +1,191 @@
+.discount-countdown {
+    min-height: 100vh;
+    background-color: #f5b9c340;
+}
+
+.discount-countdown .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.discount-countdown .header h2 {
+    font-size: 40px;
+    margin-top: 2%;
+    font-family: 'Playfair Display', serif;
+}
+
+.discount-countdown .header h3 {
+    font-size: 80px;
+    font-family: 'Playfair Display', serif;
+}
+
+.discount-countdown .header p {
+    font-size: 20px;
+    margin-top: 2%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.discount-countdown .header button {
+    font-size: 20px;
+    padding: 5px 20px;
+    width: 200px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: #ffffff6b;
+    border: none;
+    color:#000000;
+    box-shadow: 4px 2px 4px #00000028;
+    cursor: pointer;
+}
+
+.discount-countdown .header button:hover {
+    background-color: #fac7d5;
+    font-weight: 500;
+}
+
+.countdown-container-general {
+    max-width: 800px;
+    max-height: 600px;
+    margin: 40px auto;
+    gap: 60px;
+    background-color: #ffffff6b;
+    box-shadow: 6px 6px 6px #00000028;
+}
+
+/*Accordion*/
+
+.accordion {
+    max-width: 1040px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-height: 60vh;
+}
+
+.accordion span {
+    flex:1;
+    min-height: 450px;
+    margin-inline: 10px;
+    transition: all 0.5s ease;
+    margin-bottom: 3%;
+}
+
+.accordion span:hover {
+    flex:3
+}
+
+.accordion .acc-img:nth-child(1) {
+    background-image: url(../../Assets/set5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.accordion .acc-img:nth-child(2) {
+    background-image: url(../../Assets/set13.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.accordion .acc-img:nth-child(3) {
+    background-image: url(../../Assets/set18.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.accordion .acc-img:nth-child(4) {
+    background-image: url(../../Assets/set12.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.accordion .acc-img:nth-child(5) {
+    background-image: url(../../Assets/set21.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.accordion .acc-img:nth-child(6) {
+    background-image: url(../../Assets/set24.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/*Countdown*/
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+}
+
+.countdown-value {
+    width:120px;
+    margin: 10px 20px;
+    text-align: center;
+}
+
+.countdown-value h3 {
+    font-size: 5rem;
+    font-weight: bolder;
+    line-height: 1;
+    margin:10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.countdown-value span {
+    font-size: 1.1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+
+@media screen and (max-width: 1025px) {
+
+    .countdown-container-general {
+        margin: 30px auto;
+    }
+
+    .discount-countdown .header h2 {
+        margin-top: 5%;
+    }
+       
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .countdown-value {
+        width:60px;
+        margin: 7px 15px;
+    }
+    
+    .countdown-value h3 {
+        font-size: 2.6rem;
+        margin:10px;
+    }
+    
+    .countdown-value span {
+        font-size: 0.7rem;
+    }
+
+    .accordion span {
+        min-height: 400px;
+    }
+    
+    .accordion span:hover {
+        flex:5
+    }
+
+    .accordion .acc-img:nth-child(5) {
+        display: none;
+    }
+    .accordion .acc-img:nth-child(6) {
+        display: none;
+    }
+     
+}

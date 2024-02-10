@@ -1,0 +1,59 @@
+.categories ul {
+    max-width: 100%;
+}
+
+.categories ul li {
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    margin-left: 10px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.categories ul li:hover { 
+    -webkit-transform: translate(10px);
+    transform: translate(10px);
+    background-color: #f6d7ddb4;
+    padding: 3px 6px;
+}
+
+.categories .all-cat {
+   font-weight: bolder;
+   font-size: 15px;
+}
+
+.valentines-cat {
+    color: #fe2f5fd8;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 820px) {
+
+   
+   .categories ul li {
+       font-size: 13px;
+       letter-spacing: 1.5px;
+   }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+   .categories ul .all-cat {
+       font-size: 12px;
+   }
+
+   .categories ul li {
+       font-size: 10px;
+       letter-spacing: 1px;
+   }
+    
+}
+
+

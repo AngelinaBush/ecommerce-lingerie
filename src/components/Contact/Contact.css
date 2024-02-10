@@ -1,0 +1,138 @@
+.general-contact {
+    max-height: 100vh;
+    text-align: center;
+    padding: 50px;
+ }
+
+ .contact {
+    max-width: 800px; 
+    margin: 0 auto;
+    background-image: url(../Assets/flower.png);
+    background-size: cover;
+    background-position: top right;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    padding: 30px 50px;
+ }    
+ 
+
+.contact .header h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 2%;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.contact .contact-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:30px
+}
+
+.contact-left{
+    text-align: left;
+    color:#000000;
+    margin-right:20px;
+}
+
+.contact-left h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background-color: #f8f9fa;
+    color:#333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px #bbb;
+}
+
+.submit-form-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4caf50;
+    color:#fff;
+    border: none;
+    cursor:pointer;
+    color: #ff3f5f;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border: 1px solid #f0b9c2;
+}
+
+.submit-form-btn:hover {
+    background-color: #fe9bac;
+    color: white;
+}
+
+.contact-right {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.contact-right h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color:#000000;
+    font-family: 'Playfair Display', serif;
+}
+
+.contact-right p {
+    margin-bottom: 10px; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+@media screen and (max-width: 600px) {
+
+   .contact {
+       padding:20px;
+       background-image: url(../Assets/flower.png);
+       background-size: cover;
+       background-position:bottom 10% right 70%;
+   }
+
+   .contact .contact-box {
+       grid-template-columns:1fr;
+   }
+
+   .contact-left h3 {
+       font-size: 20px;
+       text-align: center;
+   }
+
+   .form-group input, textarea {
+       width: 90%;
+   }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
