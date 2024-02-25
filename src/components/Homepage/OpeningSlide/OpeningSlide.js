@@ -10,8 +10,6 @@ const OpeningSlide = () => {
     return(
         <div className='home'>
             <div className='home2'>
-                <div className='home3'>
-                </div>
 
                 <div className='landing-content'>
                        <h2>{t('Exclusive Lingerie Collection')}</h2>

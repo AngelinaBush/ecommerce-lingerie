@@ -19,7 +19,9 @@ const Shop= () => {
 
     useEffect(() => {
         localStorage.setItem('favorites', JSON.stringify(favorites));
+
         const favoritesIds = favorites.map((fav) => fav.id)
+        
         setShop((currValue) => currValue.map((item) =>
          ({...item, liked: favoritesIds.includes(item.id)  
         })))
@@ -96,7 +98,7 @@ const Shop= () => {
                     return(
                         <div key={id}>
                             <div className='product' >
-                                <Link to={`/item/${product.id}`}><img src={image} alt="product" width="200px" height="300px"/></Link>
+                                <Link to={`/shop/item/${product.id}`}><img src={image} alt="product" width="200px" height="300px"/></Link>
                                 <div className='product-details'>
                                     <div> 
                                         <h3>{name}</h3>
